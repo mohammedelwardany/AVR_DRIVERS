@@ -1,0 +1,142 @@
+/*
+ * MusicPlayer_Config.h
+ *
+ * Created: 9/21/2023 12:32:10 AM
+ *  Author: m2010
+ */ 
+
+
+#ifndef MUSICPLAYER_CONFIG_H_
+#define MUSICPLAYER_CONFIG_H_
+
+
+#define NOTE_C4 2620
+#define NOTE_D4 2940
+#define NOTE_E4 3300
+#define NOTE_F4 3490
+#define NOTE_G4 3920
+#define NOTE_A4 4400
+#define NOTE_B4 4940
+#define NOTE_C5 5230
+#define NOTE_D5 5870
+#define NOTE_E5 6590
+#define NOTE_F5 6980
+#define NOTE_G5 7840
+#define NOTE_A5 8800
+#define NOTE_B5 9880
+#define REST 4000
+
+
+
+int melody[] = {
+	NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, REST,
+	NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, REST,
+	NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, REST,
+	NOTE_A4, NOTE_G4, NOTE_A4, REST,
+	
+	NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, REST,
+	NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, REST,
+	NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, REST,
+	NOTE_A4, NOTE_G4, NOTE_A4, REST,
+	
+	NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, REST,
+	NOTE_A4, NOTE_C5, NOTE_D5, NOTE_D5, REST,
+	NOTE_D5, NOTE_E5, NOTE_F5, NOTE_F5, REST,
+	NOTE_E5, NOTE_D5, NOTE_E5, NOTE_A4, REST,
+	
+	NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, REST,
+	NOTE_D5, NOTE_E5, NOTE_A4, REST,
+	NOTE_A4, NOTE_C5, NOTE_B4, NOTE_B4, REST,
+	NOTE_C5, NOTE_A4, NOTE_B4, REST,
+	
+	NOTE_A4, NOTE_A4,
+	//Repeat of first part
+	NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, REST,
+	NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, REST,
+	NOTE_A4, NOTE_G4, NOTE_A4, REST,
+	
+	NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, REST,
+	NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, REST,
+	NOTE_C5, NOTE_D5, NOTE_B4, NOTE_B4, REST,
+	NOTE_A4, NOTE_G4, NOTE_A4, REST,
+	
+	NOTE_E4, NOTE_G4, NOTE_A4, NOTE_A4, REST,
+	NOTE_A4, NOTE_C5, NOTE_D5, NOTE_D5, REST,
+	NOTE_D5, NOTE_E5, NOTE_F5, NOTE_F5, REST,
+	NOTE_E5, NOTE_D5, NOTE_E5, NOTE_A4, REST,
+	
+	NOTE_A4, NOTE_B4, NOTE_C5, NOTE_C5, REST,
+	NOTE_D5, NOTE_E5, NOTE_A4, REST,
+	NOTE_A4, NOTE_C5, NOTE_B4, NOTE_B4, REST,
+	NOTE_C5, NOTE_A4, NOTE_B4, REST,
+	//End of Repeat
+	
+	NOTE_E5, REST, REST, NOTE_F5, REST, REST,
+	NOTE_E5, NOTE_E5, REST, NOTE_G5, REST, NOTE_E5, NOTE_D5, REST, REST,
+	NOTE_D5, REST, REST, NOTE_C5, REST, REST,
+	NOTE_B4, NOTE_C5, REST, NOTE_B4, REST, NOTE_A4,
+	
+	NOTE_E5, REST, REST, NOTE_F5, REST, REST,
+	NOTE_E5, NOTE_E5, REST, NOTE_G5, REST, NOTE_E5, NOTE_D5, REST, REST,
+	NOTE_D5, REST, REST, NOTE_C5, REST, REST,
+	NOTE_B4, NOTE_C5, REST, NOTE_B4, REST, NOTE_A4
+};
+
+int durations[] = {
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8,
+	
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8,
+	
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 8, 4, 8,
+	
+	8, 8, 4, 8, 8,
+	4, 8, 4, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 4,
+	
+	4, 8,
+	//Repeat of First Part
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8,
+	
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8,
+	
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 8, 4, 8,
+	
+	8, 8, 4, 8, 8,
+	4, 8, 4, 8,
+	8, 8, 4, 8, 8,
+	8, 8, 4, 4,
+	//End of Repeat
+	
+	4, 8, 4, 4, 8, 4,
+	8, 8, 8, 8, 8, 8, 8, 8, 4,
+	4, 8, 4, 4, 8, 4,
+	8, 8, 8, 8, 8, 2,
+	
+	4, 8, 4, 4, 8, 4,
+	8, 8, 8, 8, 8, 8, 8, 8, 4,
+	4, 8, 4, 4, 8, 4,
+	8, 8, 8, 8, 8, 2
+};
+
+
+
+
+#endif /* MUSICPLAYER_CONFIG_H_ */
