@@ -21,6 +21,7 @@
 #include "TIMER1_Interface.h"
 #include "DCM_interface.h"
 #include "MusicPlayer_Interface.h"
+#include "USART_Interface.h"
 
 // 
 // void action(void);
@@ -45,12 +46,16 @@ u8 KeyBad_Retrive;
 int main(void)
 {
 	DIO_Init();
-	//SRVM_voidOn (90);
+	//GINTERUPTS_voidEnable();
+	//TMR1_Init();
+	//SRVM_voidOn(60);
 	//SRVM_voidOff();
-	TMR1_Init();
 	LCD_init();
-	 	//TMR1_voidStart();
-	BUZZER_PlayTrack();
+	SPI_voidInit();
+	LCD_SendData('H');
+	//USART_voidInit();
+	//TMR1_voidStart();
+	//BUZZER_PlayTrack();
 
 // 	TMR0_voidInit();
 // 	TMR0_voidStart();
@@ -63,7 +68,7 @@ int main(void)
 // 
   
 // 	 
-   //	ADC_init();
+  //	ADC_init();
 
 
 // TMR0_voidSetDutyCycle_FastPwm(40);
@@ -72,7 +77,7 @@ int main(void)
 /*TMR0_voidStart();*/
 // 	Dio_SetPinMode(Pin_A4,OutPut_Low);
 // 
- // 	GINTERUPTS_voidEnable();
+
 //  	TMR0_voidInit();
 // 	TMR0_voidSetCompareMatchValue(249);
 // 	TMR0_voidCTC_SetDelay_ms(1000);
@@ -98,15 +103,16 @@ int main(void)
 
 	/*DIO_WritePinVal(Pin_A1,LOW);
 	_delay_ms(500);*/
-	int x = 0;
+
  	//LCD_voidWriteString("hello world");
+// 	Dio_SetPinMode(Pin_A6,OutPut_Low);
 	
+	u8 Local_u8ReturnedData;
+
 
 
     while(1)
 	{
-
-
         // "Super Mario Bros." theme melody
 	
          
@@ -161,7 +167,7 @@ int main(void)
 		
 		
 		////////////////////task2///////////////////////////
-//    u32 X = ADC_Scan_Single(0);
+//     u32 X = ADC_Scan_Single(0);
 //     LCD_voidWriteNumber(X);
 // 	TMR1_voidSetOutputCompareMatchValueA_FASTPWM(X) ;
 //     _delay_ms(50);
@@ -170,14 +176,27 @@ int main(void)
 // 	
 	
 	
+	//////////////////usart/////////////
+// 	
+
+// 	DataRecive(&Var);
+// 	LCD_SendData(*Var);
+// 	
+// 	DataTransmit("W");
+// 	LCD_voidWriteString("SENT");
+// 	DIO_WritePinVal(Pin_A6,HIGH);
+// 	_delay_ms(1000);
+
+
+
+	////////////////////spi/////////////////////
+
 	
-	
-	
-	
-	
-	
-	
-	
+// 	
+// 			SPI_u8SendRecieveByte('M',&Local_u8ReturnedData);
+// 			LCD_SendData(Local_u8ReturnedData);
+// 			_delay_ms(1000);
+// 	
 	
 	
 // 

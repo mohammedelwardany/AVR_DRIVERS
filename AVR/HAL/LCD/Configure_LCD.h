@@ -14,7 +14,7 @@
 #define LCD_D4 Pin_B0
 #define LCD_D5 Pin_B1
 #define LCD_D6 Pin_B2
-#define LCD_D7 Pin_B4
+#define LCD_D7 Pin_B3
 #define EN Pin_A2
 #define RS Pin_A3
 

@@ -24,8 +24,8 @@ void SRVM_voidOn(u8 Copy_u8Angle)
 	 depend on desired angle[0 : 180] */
 	if (Copy_u8Angle>=0 && Copy_u8Angle<=180)
 	{
-		//TMR1_voidSetOutputCompareMatchValueA_FASTPWM(50+((Copy_u8Angle/180)*50));
-		TMR1_voidSetOutputCompareMatchValueA_FASTPWM(250);
+
+		TMR1_voidSetOutputCompareMatchValueA_FASTPWM(250+((Copy_u8Angle*250)/180));
 	}
 	else{
 		//error handle

@@ -32,11 +32,11 @@ void BUZZER_PlayTrack(){
 	u16 length = sizeof(melody) / sizeof(melody[0]);
 	
 	for(u16 i=0;i<length;i++){
-		LCD_voidWriteNumber(melody[i]);
-		TMR1_voidSetFrequencyA_FASTPWM(melody[i]);
+		LCD_voidWriteNumber(melody[i]*20);
+		TMR1_voidSetFrequencyA_FASTPWM(melody[i]*20);
 		setHalfDutyCycle();
 		TMR1_voidStart();
-		my_delay_ms(1000/durations[i] );
+		my_delay_ms(1000/durations[i]);
 		LCD_voidClear();
 // 		TMR1_voidStop();
 	}

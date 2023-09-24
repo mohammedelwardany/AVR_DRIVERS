@@ -30,9 +30,7 @@ void TMR1_Init(void){
 	
 		ClrBit(TCCR1A,COM1A0);
 		SetBit(TCCR1A,COM1A1);
-		ICR1_u16=1024;
-// 		 	ICR1_u16 = 49;
-// OCR1A_u16 = 24;
+
 
 }
 
@@ -67,23 +65,13 @@ void TMR1_voidStop(void){
 
 void TMR1_voidSetOutputCompareMatchValueA_FASTPWM(u16 Copy_u16CompareMatchVale){
 
-	if (Copy_u16CompareMatchVale<=1000)
-	{
-		#if Timer0_PWM_Action == NON_INVERTING
-		OCR1A_u16 = (((u16)Copy_u16CompareMatchVale*ICR1_u16)/1000);
-		
-		#elif Timer0_PWM_Action == INVERTING
-		
-		Copy_u16CompareMatchVale = 1000 - Copy_u16CompareMatchVale;
-		OCR1A_u16 = (((u16)Copy_u16CompareMatchVale*ICR1_u16)/1000);
-		
-		#endif
-		
-	}
+		OCR1A_u16 = Copy_u16CompareMatchVale;
+
 }
 
 void TMR1_voidSetFrequencyA_FASTPWM(u16 Copy_u16FrequencyVale){
-	ICR1_u16 = (((u32)1000000 / (u32)Copy_u16FrequencyVale)/4)-1; //SET FREQUENCY
+	ICR1_u16=((1000000 / Copy_u16FrequencyVale)/4)-1;
+	
 }
 
 
@@ -108,16 +96,16 @@ void setHalfDutyCycle() {
 }
 
 
-void play_note(u16 frequency, u16 duration) {
+// void play_note(u16 frequency, u16 duration) {
  	//ICR1_u16 = 1 / (0.000004 * frequency) - 1;    // Set the top value for the note frequency
-	ICR1_u16 = (((u32)1000000 / (u32)frequency)/4)-1; //SET FREQUENCY
+//	ICR1_u16 = (((u32)1000000 / (u32)frequency)/4)-1; //SET FREQUENCY
 
 ///	ICR1_u16 = F_CPU / (2 * frequency) - 1;    // Set the top value for the note frequency
 	
-	OCR1A_u16 = ICR1_u16 / 2;                      // Set the compare value for 50% duty cycle
-TMR1_voidStart();
+//	OCR1A_u16 = ICR1_u16 / 2;                      // Set the compare value for 50% duty cycle
+// TMR1_voidStart();
 // 	buzzer_start();
 
 // 	buzzer_stop();
 
-}
+//}

@@ -8,6 +8,7 @@
 #include <math.h>
 #include "types.h"
 
+#include "SPI_Interface.h"
 #include "Interface_LCD.h"
 
 #include "Configure_LCD.h"
@@ -37,13 +38,14 @@ void LCD_init(void){
 
 
 
-
+u8 Garbage;
 ///////////////////////////////////prepare///////////////////////////////////////
 static void Private_LCDHalfPort(u8 copy_u8value){
-	DIO_WritePinVal(LCD_D4,GetBit(copy_u8value,0));
-	DIO_WritePinVal(LCD_D5,GetBit(copy_u8value,1));
-	DIO_WritePinVal(LCD_D6,GetBit(copy_u8value,2));
-	DIO_WritePinVal(LCD_D7,GetBit(copy_u8value,3));
+// 	DIO_WritePinVal(LCD_D4,GetBit(copy_u8value,0));
+// 	DIO_WritePinVal(LCD_D5,GetBit(copy_u8value,1));
+// 	DIO_WritePinVal(LCD_D6,GetBit(copy_u8value,2));
+// 	DIO_WritePinVal(LCD_D7,GetBit(copy_u8value,3));
+SPI_u8SendRecieveByte(copy_u8value,&Garbage);
 }
 
 

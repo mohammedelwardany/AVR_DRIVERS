@@ -30,7 +30,11 @@ MCAL\EXTI\Ex_Interups_prgram.c
 
 MCAL\GTI\G_Interups_prgram.c
 
+MCAL\SPI\SPI_Program.c
+
 MCAL\TIMER0\TIMER0_Program.c
 
 MCAL\TIMER1\TIMER1_Program.c
+
+MCAL\USART\USART_Program.c
 

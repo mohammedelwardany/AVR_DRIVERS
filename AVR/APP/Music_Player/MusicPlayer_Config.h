@@ -10,21 +10,21 @@
 #define MUSICPLAYER_CONFIG_H_
 
 
-#define NOTE_C4 2620
-#define NOTE_D4 2940
-#define NOTE_E4 3300
-#define NOTE_F4 3490
-#define NOTE_G4 3920
-#define NOTE_A4 4400
-#define NOTE_B4 4940
-#define NOTE_C5 5230
-#define NOTE_D5 5870
-#define NOTE_E5 6590
-#define NOTE_F5 6980
-#define NOTE_G5 7840
-#define NOTE_A5 8800
-#define NOTE_B5 9880
-#define REST 4000
+#define NOTE_C4 2093
+#define NOTE_D4 2349
+#define NOTE_E4 2637
+#define NOTE_F4 2793
+#define NOTE_G4 3136
+#define NOTE_A4 440
+#define NOTE_B4 494
+#define NOTE_C5 523
+#define NOTE_D5 587
+#define NOTE_E5 659
+#define NOTE_F5 698
+#define NOTE_G5 784
+#define NOTE_A5 880
+#define NOTE_B5 988
+#define REST 0
 
 
 
