@@ -148,6 +148,25 @@ Discarded input sections
  .debug_str     0x00000000      0x324 HAL/DC_Motor/DCM_program.o
  .comment       0x00000000       0x31 HAL/DC_Motor/DCM_program.o
  .debug_frame   0x00000000       0x44 HAL/DC_Motor/DCM_program.o
+ .text          0x00000000        0x0 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .data          0x00000000        0x0 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .bss           0x00000000        0x0 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .text.EX_EEPROM_voidInit
+                0x00000000        0x8 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .text.EX_EEPROM_voidWriteByte
+                0x00000000       0x3c HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .text.EX_EEPROM_voidReadByte
+                0x00000000       0x4a HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .debug_info    0x00000000      0x333 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .debug_abbrev  0x00000000      0x14a HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .debug_loc     0x00000000      0x205 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .debug_aranges
+                0x00000000       0x30 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .debug_ranges  0x00000000       0x20 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .debug_line    0x00000000      0x1e4 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .debug_str     0x00000000      0x364 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .comment       0x00000000       0x31 HAL/EXT_EEPROM/EX_EEPROM_Program.o
+ .debug_frame   0x00000000       0x68 HAL/EXT_EEPROM/EX_EEPROM_Program.o
  .text          0x00000000        0x0 HAL/KEYBAD/Program_KeyBad.o
  .data          0x00000000        0x0 HAL/KEYBAD/Program_KeyBad.o
  .bss           0x00000000        0x0 HAL/KEYBAD/Program_KeyBad.o
@@ -344,6 +363,41 @@ Discarded input sections
  .debug_str     0x00000000      0x1bc MCAL/GTI/G_Interups_prgram.o
  .comment       0x00000000       0x31 MCAL/GTI/G_Interups_prgram.o
  .debug_frame   0x00000000       0x34 MCAL/GTI/G_Interups_prgram.o
+ .text          0x00000000        0x0 MCAL/I2C/I2C_Config.o
+ .data          0x00000000        0x0 MCAL/I2C/I2C_Config.o
+ .bss           0x00000000        0x0 MCAL/I2C/I2C_Config.o
+ .debug_line    0x00000000        0x0 MCAL/I2C/I2C_Config.o
+ .debug_str     0x00000000      0x105 MCAL/I2C/I2C_Config.o
+ .comment       0x00000000       0x31 MCAL/I2C/I2C_Config.o
+ .text          0x00000000        0x0 MCAL/I2C/I2C_Program.o
+ .data          0x00000000        0x0 MCAL/I2C/I2C_Program.o
+ .bss           0x00000000        0x0 MCAL/I2C/I2C_Program.o
+ .text.TWI_voidInitMaster
+                0x00000000       0x1e MCAL/I2C/I2C_Program.o
+ .text.TWI_voidMasterSendStartCondition
+                0x00000000       0x1c MCAL/I2C/I2C_Program.o
+ .text.TWI_voidMasterSendRepeatStartCondition
+                0x00000000       0x1c MCAL/I2C/I2C_Program.o
+ .text.TWI_voidMasterSendStopCondition
+                0x00000000        0xe MCAL/I2C/I2C_Program.o
+ .text.TWI_voidMasterSendSlaveAddressRead
+                0x00000000       0x20 MCAL/I2C/I2C_Program.o
+ .text.TWI_voidMasterSendSlaveAddressWrite
+                0x00000000       0x20 MCAL/I2C/I2C_Program.o
+ .text.TWI_voidSendMasterDataByte
+                0x00000000       0x18 MCAL/I2C/I2C_Program.o
+ .text.TWI_voidReceiveMasterDataByte
+                0x00000000       0x20 MCAL/I2C/I2C_Program.o
+ .debug_info    0x00000000      0x18d MCAL/I2C/I2C_Program.o
+ .debug_abbrev  0x00000000       0x78 MCAL/I2C/I2C_Program.o
+ .debug_loc     0x00000000       0xb8 MCAL/I2C/I2C_Program.o
+ .debug_aranges
+                0x00000000       0x58 MCAL/I2C/I2C_Program.o
+ .debug_ranges  0x00000000       0x48 MCAL/I2C/I2C_Program.o
+ .debug_line    0x00000000      0x1f2 MCAL/I2C/I2C_Program.o
+ .debug_str     0x00000000      0x2bc MCAL/I2C/I2C_Program.o
+ .comment       0x00000000       0x31 MCAL/I2C/I2C_Program.o
+ .debug_frame   0x00000000       0x94 MCAL/I2C/I2C_Program.o
  .text          0x00000000        0x0 MCAL/SPI/SPI_Program.o
  .data          0x00000000        0x0 MCAL/SPI/SPI_Program.o
  .bss           0x00000000        0x0 MCAL/SPI/SPI_Program.o
@@ -787,6 +841,7 @@ LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/
 LOAD APP/CALCULATOR/Calculator_LCD_KEYS_Program.o
 LOAD APP/Music_Player/MusicPlayer_Program.o
 LOAD HAL/DC_Motor/DCM_program.o
+LOAD HAL/EXT_EEPROM/EX_EEPROM_Program.o
 LOAD HAL/KEYBAD/Program_KeyBad.o
 LOAD HAL/LCD4X20/LCD4X20_Program.o
 LOAD HAL/LCD/Program_LCD.o
@@ -798,6 +853,8 @@ LOAD MCAL/ADC/ADC_Program.o
 LOAD MCAL/DIO/Program.o
 LOAD MCAL/EXTI/Ex_Interups_prgram.o
 LOAD MCAL/GTI/G_Interups_prgram.o
+LOAD MCAL/I2C/I2C_Config.o
+LOAD MCAL/I2C/I2C_Program.o
 LOAD MCAL/SPI/SPI_Program.o
 LOAD MCAL/TIMER0/TIMER0_Program.o
 LOAD MCAL/TIMER1/TIMER1_Program.o
